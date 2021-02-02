@@ -137,6 +137,7 @@ document.querySelectorAll("td").forEach(element => {
 			message.style.opacity = 0;
 			await sleep(150);
 			message.style.display = "none";
+			restart();
 		}
 		joueur = joueur == 7 ? 8 : 7
 	});
