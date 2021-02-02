@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Morpion Javascript</title>
+
+		<!-- FONT AWESOME -->
+		<script src="https://kit.fontawesome.com/932d0de3e0.js" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<h1>Jouez au morpion</h1>
+		<div id="leaderboard">
+			<div class="user top">
+				<span class="username top">...</span> <span class="form"><i class="fas fa-times"></i></span>
+				<div class="body">
+					<span class="points">Points: 0</span>
+					<span class="crown" id="1"><i class="fas fa-crown"></i></span>
+				</div>
+			</div>
+			<div class="user bottom">
+				<span class="username">...</span> <span class="form"><i class="fas fa-circle"></i></span>
+				<div class="body bottom">
+					<span class="points">Points: 0</span>
+					<span class="crown" id="2"><i class="fas fa-crown"></i></span>
+				</div>
+			</div>
+		</div>
+		<table>
+			<tbody>
+				<tr>
+					<td><i id="00" class="cross fas fa-times"></i><i id="00" class="circle fas fa-circle"></i></td>
+					<td><i id="01" class="cross fas fa-times"></i><i id="01" class="circle fas fa-circle"></i></td>
+					<td><i id="02" class="cross fas fa-times"></i><i id="02" class="circle fas fa-circle"></i></td>
+				</tr>
+				<tr>
+					<td><i id="10" class="cross fas fa-times"></i><i id="10" class="circle fas fa-circle"></i></td>
+					<td><i id="11" class="cross fas fa-times"></i><i id="11" class="circle fas fa-circle"></i></td>
+					<td><i id="12" class="cross fas fa-times"></i><i id="12" class="circle fas fa-circle"></i></td>
+				</tr>
+				<tr>
+					<td><i id="20" class="cross fas fa-times"></i><i id="20" class="circle fas fa-circle"></i></td>
+					<td><i id="21" class="cross fas fa-times"></i><i id="21" class="circle fas fa-circle"></i></td>
+					<td><i id="22" class="cross fas fa-times"></i><i id="22" class="circle fas fa-circle"></i></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div id="winMessage"></div>
+		
+		<script src="interaction.js"></script>
+	</body>
+</html>
